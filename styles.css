@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #010706;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*Alarm Clock style*/
+.alarm{
+    border: 2px solid rgba(0,0,0,0.25);
+    border-radius: 8px;
+    background: #41f1f1c4;
+    box-shadow: 10px 50px 70px rgba(21, 211, 218, 0.25),
+    inset 5px 5px 10px rgba(19, 170, 207, 0.5),
+    inset 5px 5px 20px rgba(14, 141, 214, 0.2),
+    inset -5px -5px 15px rgba(7, 187, 219, 0.75);
+    margin-left: 40px;
+    
+}
+
+.datetime{
+    color: #fff;
+    background: #00000056;
+    font-family: "Segoe UI", sans-serif;
+    width: 400px;
+    padding: 15px 20px;
+    transition: 0.5s;
+    transition-property: all;
+    
+}
+
+.datetime:hover{
+    background: rgba(0,0,0,0.5);
+    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);;
+    border-radius: 5px;
+}
+
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    max-width: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.time span:last-child{
+    background: #096661b2;
+    font-size: 6rgb(216, 24, 65);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+
+hr{
+    border: 2px solid  rgb(0, 0, 0);
+    margin: 20px auto;
+    background: #2f363e;
+    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+.setAlarm{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.column select{
+    background: #010303c4;
+    color: #fff;
+    text-align: center;
+    padding: 8px 4px;
+    border: 2px solid rgba(0,0,0,0.25);
+    border-radius: 18px;
+    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+
+#btn-setAlarm, .btn-delete, #stopAlarm{
+    padding: 5px;
+    color: #fff;
+    background: #041a1a;
+    border: 2px solid rgba(0,0,0,0.25);
+    border-radius: 18px;
+    box-shadow: 10px 50px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+#stopAlarm{
+    visibility: hidden;
+    width: 100px;
+    margin: 0 34%;
+}
+
+.btn-delete{
+    margin-left: 50px;
+}
+
+#btn-setAlarm:hover, .btn-delete:hover, #stopAlarm:hover{
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+h3{
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.alarmList{
+    color: #fff;
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.alarmLog{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
+}
+
+
+
